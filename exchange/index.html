@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css' />
+	<title>Myanmar Currency Kyats Exchange Rate</title>
+</head>
+<body>
+	<div class="container" id="mainWrapper">
+		
+		<h1>Myanmar Currency <span class="text-muted">Kyats</span> Exchange Rate</h1>
+
+		<div class="row" id="exchangeWrap">
+			<div id="message" class="alert alert-warning">
+				<p>
+					Fetching Currency Information from <em>forex.cbm.gov.mm</em>...
+				</p>
+			</div>
+		</div>
+		
+		<div id="disclaimer">
+			<h3>Disclaimer</h3>
+			<p>This page is created as an experimental page to retrieve the exchange currency information from <a href="http://forex.cbm.gov.mm/">Central Bank of Myanmar</a> through its API (<a href="http://forex.cbm.gov.mm/index.php/api">forex.cbm.gov.mm/index.php/api</a>). I'll not be responsible for inaccuracies, errors or exchange information displayed in this page.</p>
+		</div>
+		<div id="dateWrap"><strong>Last Update:</strong> <em id="date"></em></div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="exchange/jquery.xdomainajax.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// var ajaxReq1 = $.ajax({
+			// 	url: 'http://forex.cbm.gov.mm/api/currencies',
+			// 	method: 'GET',		
+			// 	contentType: 'application/json',
+		 //        dataType:'jsonp',
+			// });
+
+			// ajaxReq1.done(function( response1 ){
+			// 	var ajaxReq2 = $.ajax({
+			// 		url: 'http://forex.cbm.gov.mm/api/latest',
+			// 		method: 'GET',
+			// 		dataType: 'jsonp'
+			// 	});
+
+			// 	ajaxReq2.done(function( response2 ){
+			// 		console.log( response1, response2 );
+			// 	});
+			// })
+			// $.getJSON( 'http://forex.cbm.gov.mm/api/currencies' ).done(function( response1 ){
+			// $.getJSON( 'http://forex.cbm.gov.mm/api/latest' ).done(function( response2 ){
+			// console.log( response1 );
+			// console.log( response2 );
+		});
+	</script>
+</body>
+</html>
