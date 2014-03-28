@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Pictures by Days</title>
+</head>
+<body>
+	<div id="days" style="text-align:center; margin-top: 10%;"></div>
+<script type="text/javascript">
+	var today;
+	var day=new Date().getDay();
+	switch (day)
+	  {
+	  case 0:
+	    today='<img src="img/sunday.jpg">';
+	    break;
+	  case 1:
+	    today='<img src="img/monday.jpg">';
+	    break;
+	  case 2:
+	    today='<img src="img/tuesday.jpg">';
+	    break;
+	  case 3:
+	    today='<img src="img/wednesday.gif">';
+	    break;
+	  case 4:
+	    today='<img src="img/thursday.jpg">';
+	    break;
+	  case 5:
+	    today='<img src="img/friday.gif">'; 
+	    break;
+	  case 6:
+	    today='<img src="img/saturday.jpg">';
+	    break;
+	  }
+	document.getElementById("days").innerHTML=today;
+</script>
+</body>
+</html>

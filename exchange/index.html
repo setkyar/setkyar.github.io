@@ -41,12 +41,12 @@
 		 //        dataType:'jsonp',
 			// });
 
-			// ajaxReq1.done(function( response1 ){
-			// 	var ajaxReq2 = $.ajax({
-			// 		url: 'http://forex.cbm.gov.mm/api/latest',
-			// 		method: 'GET',
-			// 		dataType: 'jsonp'
-			// 	});
+			ajaxReq1.done(function( response1 ){
+				var ajaxReq2 = $.ajax({
+					url: 'http://forex.cbm.gov.mm/api/latest',
+					method: 'GET',
+					dataType: 'jsonp'
+				});
 
 			// 	ajaxReq2.done(function( response2 ){
 			// 		console.log( response1, response2 );
